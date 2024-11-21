@@ -1,0 +1,13 @@
+# Ignorar carpetas generadas por venv
+Lib/
+Include/
+Scripts/
+pyvenv.cfg
+
+# Ignorar base de datos SQLite
+db.sqlite3
+
+# Ignorar archivos temporales de Python
+*.pyc
+__pycache__/
+

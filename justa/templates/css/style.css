@@ -1,0 +1,328 @@
+body {
+   font-family: 'Roboto', sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f4f4f4;
+}
+
+/*NavBar*/
+
+.navbar {
+   display: flex;
+   justify-content: space-between; /* Empuja los elementos a los extremos */
+   align-items: center; /* Alinea verticalmente */
+   padding: 0 20px; /* Solo padding horizontal */
+   background-color: #dbdbdb; /* Color de fondo */
+   height: 80px; /* Altura del navbar */
+}
+ 
+.logo a {
+   font-size: 1.5rem; /* Tamaño del logo */
+   font-weight: bold;
+   text-decoration: none;
+   color: #333; /* Color del texto */
+   line-height: 1; /* Centra verticalmente el texto */
+}
+
+.nav-items {
+   display: flex;
+   list-style: none; /* Quita los puntos de la lista */
+   margin: 0;
+   padding: 0; /* Asegura que no haya espacio extra */
+   padding-right: 30px; /* Ajusta el espacio a la derecha si es necesario */
+}
+ 
+.nav-items li {
+   margin-left: 35px; /* Espacio entre los enlaces */
+}
+ 
+.nav-items a {
+   text-decoration: none;
+   color: #333; /* Color del texto */
+   font-weight: 500;
+   line-height: 1; /* Centra verticalmente el texto */
+}
+
+/*Hero*/
+
+.container {
+   display: grid;
+   grid-template-columns: 0.5r 1fr;
+   grid-template-rows: auto;
+   gap: 20px;
+   align-items: flex-start;
+   padding-top: 60px;
+}
+
+.item1 {
+   grid-column: 1;
+   grid-row: 1;
+}
+
+.item2 {
+   padding-top: 25px;
+   grid-column: 2;
+   grid-row: 1;
+}
+
+#Registrarse-hero {
+   background-color: #4366f3;
+   border: none;
+   border-radius: 100px;
+   cursor: pointer;
+   padding: 10px 30px;
+   margin-right: 5px;
+}
+
+#IniciarSesion-hero {
+   background-color: transparent;
+   border-radius: 100px;
+   border: none;
+   cursor: pointer;
+   padding: 10px 30px;
+   box-shadow: inset 0 0 0 4px #4366f3;
+   color: #4366f3;
+   margin-left: 5px;
+}
+
+/*Category Carousel*/
+
+#firstHR {
+   height: 4px;
+   background-color: #4366f3;
+   border: none;
+   margin-top: 20px;
+}
+
+#secondHR {
+   height: 4px;
+   background-color: #4366f3;
+   border: none;
+   margin-bottom: 20px;
+}
+
+.Category-items {
+   display: flex;
+   list-style: none; /* Quita los puntos de la lista */
+   margin: 0;
+   padding: 0; /* Asegura que no haya espacio extra */
+   padding: 0 120px; /* Ajusta el espacio a la derecha si es necesario */
+   justify-content: space-between;
+}
+ 
+.Category-items a {
+   text-decoration: none;
+   color: #4366f3; /* Color del texto */
+   font-weight: 500;
+   line-height: 1; /* Centra verticalmente el texto */
+}
+
+/*Cards*/
+
+#Cards {
+   display: flex;
+   justify-content: center; /* Centra las tarjetas horizontalmente */
+   align-items: flex-start; /* Alinea las tarjetas en la parte superior (puedes cambiar a center si quieres que estén verticalmente centradas) */
+   flex-wrap: wrap; /* Permite que las tarjetas se muevan a la siguiente línea si no hay suficiente espacio */
+   gap: 20px; /* Espacio entre las tarjetas */
+}
+
+#Cards {
+   padding-bottom: 40px;
+}
+
+.card {
+   width: 18rem; /* Mantiene el ancho de las tarjetas */
+}
+
+.card-title {
+   display: flex;
+   justify-content: center;
+}
+
+.card-text {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+
+.card-img-top {
+   width: 100%; /* Ocupa todo el ancho de la carta */
+   height: 12rem; /* Altura fija para la imagen */
+   object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+/*Banner*/
+#Banner {
+   display: grid;
+   grid-template-columns: 1fr 0.5fr; /* Cambia 1r a 1fr */
+   grid-template-rows: auto;
+   gap: 20px;
+   background-color: #dbdbdb;
+   padding-top: 60px;
+   padding-bottom: 60px;
+   align-items: flex-start;
+}
+
+.item3 {
+   grid-column: 1;
+   grid-row: 1;
+   padding-left: 86.5px;
+   padding-top: 35px;
+
+}
+
+.item4 {
+   grid-column: 2;
+   grid-row: 1;
+   padding-right: 86.5px;
+}
+
+#More-Info {
+   background-color: #ffffff;
+   border: none;
+   border-radius: 100px;
+   cursor: pointer;
+   padding: 10px 60px;
+   text-decoration: none;
+   color: #333;
+}
+
+/*blog-area*/
+
+#Blogs h1 {
+   display:flex;
+   justify-content: center;
+   padding-top: 40px;
+   margin: 0;
+}
+
+#CardsBlog {
+   display: flex;
+   justify-content: center; /* Centra las tarjetas horizontalmente */
+   align-items: flex-start; /* Alinea las tarjetas en la parte superior (puedes cambiar a center si quieres que estén verticalmente centradas) */
+   flex-wrap: wrap; /* Permite que las tarjetas se muevan a la siguiente línea si no hay suficiente espacio */
+   gap: 20px; /* Espacio entre las tarjetas */
+   padding-top: 40px;
+   padding-bottom: 40px;
+}
+
+.cardBlog {
+   width: 18rem; /* Mantiene el ancho de las tarjetas */
+}
+
+.card-titleBlog {
+   display: flex;
+   justify-content: center;
+}
+
+.card-textBlog {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+
+.card-img-topBlog {
+   width: 100%; /* Ocupa todo el ancho de la carta */
+   height: 12rem; /* Altura fija para la imagen */
+   object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+/*FORM*/
+
+#Form-area {
+   display: grid;
+   grid-template-columns: 0.5fr 1fr; /* Cambia 1r a 1fr */
+   grid-template-rows: auto;
+   gap: 40px;
+   background-color: #dbdbdb;
+   padding: 120px;
+   margin: 50px;
+   border-radius: 40px;
+}
+
+.item5 {
+   grid-column: 1;
+   grid-row: 1;
+   padding-left: 86.5px;
+   padding-top: 35px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.item6 {
+   grid-column: 2;
+   grid-row: 1;
+   padding-right: 86.5px;
+}
+
+.FormIMG {
+   width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.formbutton {
+   background-color: #ffffff;
+   border: none;
+   border-radius: 100px;
+   cursor: pointer;
+   padding: 10px 60px;
+}
+
+/* Estilos para la sección con imagen de fondo */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajusta la altura a tu gusto */
+    background-image: url('https://via.placeholder.com/1500x800'); /* Coloca la URL de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    display: flex; /* Usamos Flexbox para centrar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    text-align: center; /* Centra el texto */
+}
+
+/*Footer*/
+
+.Footer-items {
+   list-style: none; /* Quita los puntos de la lista */
+   margin: 0;
+   padding: 0; /* Asegura que no haya espacio extra */
+   padding-right: 30px; /* Ajusta el espacio a la derecha si es necesario */
+}
+ 
+.Footer-items li {
+   margin-left: 35px; /* Espacio entre los enlaces */
+}
+ 
+.Footer-items a {
+   text-decoration: none;
+   color: #333; /* Color del texto */
+   font-weight: 500;
+   line-height: 1; /* Centra verticalmente el texto */
+}
+
+footer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between; /* Empuja los elementos a los extremos */
+   padding: 65px 20px; /* Solo padding horizontal */
+   background-color: #dbdbdb; /* Color de fondo */
+   height: 80px; /* Altura del navbar */
+}
+
+.RRSS{
+   display: flex;
+   justify-content: space-between;
+}
+
+.RRSS i{
+   font-size: 30px;
+   padding-left: 10px;
+}
