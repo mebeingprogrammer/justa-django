@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'relaway', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+
+body {
+    background-color: #2e2e2e;
+}
+
+/* colores y font */
+:root{
+    --text-color: #000000;
+    --other-color: rgb(201, 201, 201);
+    --bg-color: #010101;
+
+    --big-font: 2.5rem;
+    --h2-font: 1.6rem;
+    --p-font: 2.1rem;
+}
+
+/* Hablemos sobre el arte digital */
+.home-text h2{
+    font-size: var(--big-font);
+    font-weight: 20;
+    line-height: 1.0;
+    margin-bottom: 0rem;
+    text-align: left;
+}
+/* linea de separacion */
+hr {
+border-top: 8px solid gray;
+ 
+  }
+/* parrafo */
+p{
+    text-align: justify;
+    font-size: medium;
+}
+li{
+    text-align: justify;
+    font-size: medium;
+}
+
+/* container */
+.container{
+    padding: 30px 14% 70px;
+    display: grid;
+    gap: 2rem;
+    text-align: center;
+    background-color: #2e2e2e;
+}
+
+.container-box{
+    padding: 15px;
+    text-align:center;
+    background: var(--other-color);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-box h3{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 50%;
+    color: white;
+    padding-top: 60px;
+}
+
+img {
+    float: left;
+    max-width: 250px;
+    border-radius: 20%;
+    margin-right: 15px; 
+}
+
+.arte h2 {
+    padding-bottom: 20px;
+    margin: 0px auto;
+    width: 70%;
+    text-align: left;
+}
+

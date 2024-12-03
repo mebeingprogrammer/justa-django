@@ -1,0 +1,116 @@
+/* Estilos generales */
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+    /* Fondo oscuro para el modal */
+}
+
+h2 {
+    font-family: "Bowlby One SC", sans-serif;
+    font-style: normal;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Modal - contenedor */
+.modal {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #272727;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* Columna de imagen (1fr) y columna de formulario (2fr) */
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1400px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+/* Imagen a la izquierda */
+.modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Formulario a la derecha */
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-form h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo de los inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+    width: 100%;
+    background-color: #2e2e2e;
+}
+
+/* Botón de submit */
+button[type="submit"] {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(222, 0, 0);
+}
+
+/* Estilo del botón de cierre */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #999;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #333;
+}

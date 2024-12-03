@@ -1,0 +1,533 @@
+body {
+   font-family: "Raleway", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 600;
+   font-style: normal;
+   margin: 0;
+   padding: 0;
+   background-color: #2e2e2e;
+   color: #e0e0e0;
+}
+
+#BOX {
+   padding: 60px;
+}
+
+#BOX-LATERAL {
+   padding-left: 60px;
+   padding-right: 60px;
+}
+
+#BOX-FLEX {
+   display: flex;
+   justify-content: center;
+   /* Centra las tarjetas horizontalmente */
+   align-items: flex-start;
+   /* Alinea las tarjetas en la parte superior (puedes cambiar a center si quieres que estén verticalmente centradas) */
+   padding: 60px;
+}
+/*Hero*/
+
+.Hero {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-position: center;
+}
+
+.Hero video {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   /* Asegura que el video cubra el área sin deformarse */
+   z-index: 1;
+   /* Envía el video al fondo */
+}
+
+/* Capa de superficie negra con opacidad */
+.overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.6);
+   z-index: 2;
+   /* El overlay está debajo del contenido */
+}
+
+/* Estilo del texto */
+.Content-Hero {
+   position: relative;
+   z-index: 2;
+   /* El texto está encima del overlay */
+   color: #e0e0e0;
+   margin-top: 92px;
+   margin-bottom: 92px;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+
+}
+
+.Content-Hero h1 {
+   font-family: "Bowlby One SC", sans-serif;
+   font-style: normal;
+   font-size: 5rem;
+   font-weight: bold;
+   letter-spacing: 1px;
+}
+
+.Content-Hero p {
+   font-size: large;
+}
+
+#Registrarse-hero {
+   background-color: red;
+   border: none;
+   border-radius: 100px;
+   cursor: pointer;
+   padding: 10px 70px;
+   margin-right: 5px;
+   color: white;
+   font-weight: 700;
+}
+
+#IniciarSesion-hero {
+   background-color: transparent;
+   border-radius: 100px;
+   border: none;
+   cursor: pointer;
+   padding: 10px 70px;
+   box-shadow: inset 0 0 0 4px #e0e0e0;
+   color: #e0e0e0;
+   margin-left: 5px;
+   font-weight: 700;
+}
+
+
+/*Category Carousel*/
+
+#secondHR {
+   height: 4px;
+   background-color: #e0e0e0;
+   border: none;
+   margin: 0px;
+}
+
+.Category-items {
+   display: flex;
+   list-style: none;
+   /* Quita los puntos de la lista */
+   margin: 0;
+   padding: 0;
+   /* Asegura que no haya espacio extra */
+   padding: 0 120px;
+   /* Ajusta el espacio a la derecha si es necesario */
+   justify-content: space-between;
+}
+
+.Category-items a {
+   text-decoration: none;
+   color: #e0e0e0;
+   /* Color del texto */
+   font-weight: 500;
+   line-height: 1;
+   /* Centra verticalmente el texto */
+}
+
+/*Cards*/
+
+#Card-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 60px;
+   margin-right: 60px;
+   gap: 40px;
+
+}
+
+.Card {
+   border-radius: 40px;
+   width: 350px;
+   overflow: hidden;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Card:hover {
+   transform: scale(1.05);
+   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.Card-header {
+   width: 100%;
+   /* Ocupar todo el ancho del contenedor */
+   height: 300px;
+   /* Altura fija */
+   overflow: hidden;
+   /* Recorta el contenido que sobresalga */
+   position: relative;
+   /* Asegura que la imagen esté contenida */
+}
+
+.Card-header video {
+   width: 100%;
+   /* La imagen se adapta al ancho del contenedor */
+   height: 100%;
+   /* La imagen llena la altura del contenedor */
+   object-fit: cover;
+   /* Ajusta la imagen para que no se deforme */
+   position: absolute;
+   /* Asegura que se quede dentro del header */
+   top: 0;
+   /* La imagen comienza desde la parte superior */
+   left: 0;
+   border-radius: 40px;
+}
+
+.Card-body {
+   padding: 15px;
+   text-align: center;
+   font-weight: 300;
+}
+
+.Card-body h2 {
+   margin: 18px 0;
+}
+
+.Card-body p {
+   margin: 18px 0;
+   color: #ffffff;
+}
+
+.Card-footer {
+   display: flex;
+   justify-content: center;
+   /* Centra el contenido horizontalmente */
+   align-items: center;
+   /* Centra el contenido verticalmente */
+   padding: 20px;
+}
+
+.Card-footer p {
+   font-family: "Raleway", sans-serif;
+   font-weight: bolder;
+   color: #272727;
+   margin: 0;
+}
+
+#Card-1 .Card-body h2 {
+   font-family: "Bowlby One SC", sans-serif;
+   color: #ff2626;
+
+}
+
+#Card-1 .Card-footer {
+   background-color: red;
+}
+
+#Card-1 .Card-footer p {
+   color: #dbdbdb;
+}
+
+#Card-2 .Card-body h2 {
+   font-family: "Bowlby One SC", sans-serif;
+   color: #ff2626;
+}
+
+#Card-2 .Card-footer {
+   background-color: red;
+}
+
+#Card-2 .Card-footer p {
+   color: #dbdbdb;
+}
+
+#Card-3 .Card-body h2 {
+   font-family: "Bowlby One SC", sans-serif;
+   color: #ff2626;
+}
+
+#Card-3 .Card-footer {
+   background-color: red;
+}
+
+#Card-3 .Card-footer p {
+   color: #dbdbdb;
+}
+
+/*Banner*/
+
+#BOX-BANNER {
+   padding: 60px;
+   background-image: url("../img/BannerBackground.jpg");
+   position: relative;
+   z-index: 1;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+#Banner {
+   display: grid;
+   grid-template-columns: 1fr 0.5fr;
+   /* Cambia 1r a 1fr */
+   grid-template-rows: auto;
+   gap: 20px;
+   padding-top: 60px;
+   padding-bottom: 60px;
+   align-items: flex-start;
+}
+
+#Banner h1 {
+   font-family: "Bowlby One SC", sans-serif;
+}
+
+.overlay-banner {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.8);
+   z-index: 2;
+   /* El overlay está debajo del contenido */
+}
+
+.item3 {
+   grid-column: 1;
+   grid-row: 1;
+   padding-left: 86.5px;
+   padding-top: 35px;
+   position: relative;
+   z-index: 3;
+}
+
+.item3 h1 {
+   margin-bottom: 40px;
+}
+
+.item3 p {
+   margin-bottom: 20px;
+}
+
+.item4 {
+   grid-column: 2;
+   grid-row: 1;
+   padding-right: 86.5px;
+   position: relative;
+   z-index: 3;
+}
+
+#Buttons-banner {
+   padding-top: 30px;
+}
+
+#More-Info {
+   background-color: red;
+   border: none;
+   border-radius: 100px;
+   cursor: pointer;
+   padding: 12px 50px;
+   margin-right: 5px;
+   color: white;
+   font-weight: 700;
+   text-decoration: none;
+}
+
+/*blog-area*/
+
+#Blogs h1 {
+   display: flex;
+   justify-content: center;
+   padding-top: 40px;
+   margin: 0;
+   font-family: "Bowlby One SC", sans-serif;
+}
+
+#GoToBlog {
+   text-decoration: none;
+}
+
+#Blog-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+   gap: 40px;
+}
+
+.Blog {
+   border-radius: 40px;
+   width: 400px;
+   overflow: hidden;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Blog:hover {
+   transform: scale(1.05);
+   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.Blog-header {
+   width: 100%;
+   /* Ocupar todo el ancho del contenedor */
+   height: 300px;
+   /* Altura fija */
+   overflow: hidden;
+   /* Recorta el contenido que sobresalga */
+   position: relative;
+   /* Asegura que la imagen esté contenida */
+}
+
+.Blog-header img {
+   width: 100%;
+   /* La imagen se adapta al ancho del contenedor */
+   height: 100%;
+   /* La imagen llena la altura del contenedor */
+   object-fit: cover;
+   /* Ajusta la imagen para que no se deforme */
+   position: absolute;
+   /* Asegura que se quede dentro del header */
+   top: 0;
+   /* La imagen comienza desde la parte superior */
+   left: 0;
+}
+
+.Blog-body {
+   padding: 15px;
+   text-align: center;
+   font-weight: 300;
+}
+
+.Blog-body h2 {
+   margin: 18px 0;
+}
+
+.Blog-body p {
+   margin: 18px 0;
+   color: #ffffff;
+}
+
+.Blog-footer {
+   display: flex;
+   justify-content: center;
+   /* Centra el contenido horizontalmente */
+   align-items: center;
+   /* Centra el contenido verticalmente */
+   padding: 20px;
+}
+
+.Blog-footer p {
+   font-family: "Raleway", sans-serif;
+   font-weight: bolder;
+   color: #272727;
+   margin: 0;
+}
+
+#Blog-1 .Blog-body h2 {
+   font-family: "Bowlby One SC", sans-serif;
+   color: #ff2626;
+
+}
+
+#Blog-1 .Blog-footer {
+   background-color: red;
+}
+
+#Blog-1 .Blog-footer p {
+   color: #dbdbdb;
+}
+
+#Blog-2 .Blog-body h2 {
+   font-family: "Bowlby One SC", sans-serif;
+   color: #ff2626;
+}
+
+#Blog-2 .Blog-footer {
+   background-color: red;
+}
+
+#Blog-2 .Blog-footer p {
+   color: #dbdbdb;
+}
+
+
+/*Login y register*/
+
+#text-contact {
+   font-family: "Bowlby One SC", sans-serif;
+   margin-bottom: 20px;
+
+}
+
+.Contacts {
+   display: grid;
+   grid-template-columns: 1fr 3fr;
+   /* Imagen y contenido divididos a partes iguales */
+   gap: 20px;
+   /* Espacio entre la imagen y el texto */
+   align-items: start;
+   /* Centra verticalmente los elementos */
+}
+
+#Contacts-IMG {
+   display: flex;
+   justify-content: center;
+}
+
+/* Imagen */
+#Contacts-IMG img {
+   width: 130px;
+   /* Escala proporcional dentro de su contenedor */
+   height: auto;
+   /* Mantiene la proporción */
+   border-radius: 10px;
+   /* Esquinas redondeadas */
+}
+
+/* Texto */
+#Contacts-Content {
+   text-align: left;
+   /* Alinea el texto a la izquierda */
+}
+
+#Contacts-Content p {
+   margin-bottom: 20px;
+   /* Espaciado entre el texto y el botón */
+   font-size: 1rem;
+   color: white;
+   line-height: 1.5;
+   /* Mejora la legibilidad */
+}
+
+/* Botón */
+.button-red {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #ff2626;
+   /* Rojo */
+   color: #fff;
+   /* Texto blanco */
+   font-size: 1rem;
+   font-weight: bold;
+   text-align: center;
+   text-decoration: none;
+   /* Elimina el subrayado */
+   border-radius: 30px;
+   /* Bordes redondeados */
+   transition: background-color 0.3s ease;
+}
+
+.button-red:hover {
+   background-color: #d92020;
+   /* Rojo más oscuro al pasar el mouse */
+}

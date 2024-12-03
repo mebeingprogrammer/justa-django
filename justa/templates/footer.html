@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        footer {
+            background-color: #272727;
+            /* Color de fondo */
+        }
+
+        .Footer-items {
+            list-style: none;
+            /* Quita los puntos de la lista */
+            margin: 0;
+            padding: 0;
+            /* Asegura que no haya espacio extra */
+            padding-right: 30px;
+            /* Ajusta el espacio a la derecha si es necesario */
+        }
+
+        .Footer-items li {
+            margin-left: 35px;
+            /* Espacio entre los enlaces */
+        }
+
+        .Footer-items a {
+            text-decoration: none;
+            color: white;
+            /* Color del texto */
+            font-weight: 500;
+            line-height: 1;
+            /* Centra verticalmente el texto */
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* Empuja los elementos a los extremos */
+            padding: 65px 20px;
+            /* Solo padding horizontal */
+            height: 80px;
+            /* Altura del navbar */
+        }
+
+        .footer-content p {
+            color: #676767;
+        }
+
+        .RRSS {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .RRSS i {
+            font-size: 30px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <footer>
+        <div class="footer-content">
+            <nav class="Footer-nav">
+                <ul class="Footer-items">
+                    <li><a href="#hero">Iniciar sesion</a></li>
+                    <li><a href="#hero">Registrarse</a></li>
+                    <li><a href="#Blogs">Blogs</a></li>
+                    <li><a href="#Banner">Politicas</a></li>
+                </ul>
+            </nav>
+            <p>© 2024 Justa. Todos los derechos reservados.</p>
+            <div class="RRSS">
+                <i class="bi bi-twitter-x"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-threads"></i>
+            </div>
+        </div>
+    </footer>
+
+    
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            background-color: #1e1e1e;
+            height: 80px;
+        }
+
+        .logo a {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #e0e0e0;
+            line-height: 1;
+        }
+
+        .nav-items {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            padding-right: 30px;
+        }
+
+        .nav-items li {
+            margin-left: 35px;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            color: #e0e0e0;
+            font-weight: 500;
+            line-height: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="{% static 'img\logo.png' %}" alt="Hirono">
+            </div>
+            <ul class="nav-items">
+                <li><a href="#hero">Iniciar sesion</a></li>
+                <li><a href="#hero">Registrarse</a></li>
+                <li><a href="#Blogs">Blogs</a></li>
+                <li><a href="#Banner">Politicas</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

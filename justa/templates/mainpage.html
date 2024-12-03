@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/mainpage.css' %}">
+    <link rel="icon" href="{% static 'img/icon.png' %}">
+    <title>Document</title>
+</head>
+
+{% include 'header.html' %}
+
+
+<body>
+    <div class="container mt-5">
+        <h1>Lista de Posts</h1>
+        <div class="row">
+            {% for post in posts %}
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ post.image.url }}" class="card-img-top" alt="{{ post.caption }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ post.caption }}</h5>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <p>No hay posts disponibles.</p>
+            {% endfor %}
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+
+</body>
+
+</html>

@@ -122,3 +122,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Archivos multimedia (imagenes subidas por usuarios)
+MEDIA_URL = '/media/'  # URL base para acceder a los archivos subidos
+MEDIA_ROOT = BASE_DIR / 'media'  # Carpeta donde se almacenarán los archivos subidos
